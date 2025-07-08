@@ -1,48 +1,108 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Экоклинер</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Экоклинер – Эко-уборка в Калининграде</title>
   <style>
     body {
       font-family: sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f1fdf4;
-      color: #222;
+      background: #f7f9f8;
+      color: #333;
     }
     header {
-      background: #38b000;
+      background: #1e9d74;
       color: white;
       padding: 20px;
       text-align: center;
     }
-    main {
+    .container {
       padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #1e9d74;
+    }
+    .gallery img {
+      width: 48%;
+      margin: 1%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .review {
+      background: #eaf5f1;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-left: 4px solid #1e9d74;
+      border-radius: 6px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #1e9d74;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
     footer {
       text-align: center;
-      padding: 10px;
-      background: #d9f8e4;
-    }
-    .phone {
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #007f5f;
+      padding: 15px;
+      background: #f0f0f0;
+      color: #666;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Экоклинер — Эко-уборка в Калининграде</h1>
-  </header>
-  <main>
-    <p>Мы предлагаем профессиональную эко-уборку квартир, домов и офисов с использованием безопасных и биоразлагаемых средств.</p>
-    <p>Звоните: <span class="phone">+7 (921) 603-42-67</span></p>
-  </main>
-  <footer>
-    &copy; 2025 Экоклинер | Калининград
-  </footer>
+
+<header>
+  <h1>Экоклинер</h1>
+  <p>Профессиональная эко-уборка в Калининграде</p>
+</header>
+
+<div class="container">
+  <h2>О нас</h2>
+  <p>Мы используем только безопасные, экологичные средства. Работаем быстро, качественно и с любовью к чистоте.</p>
+
+  <h2>Отзывы клиентов</h2>
+  <div class="review">
+    <strong>Ирина С.:</strong> Спасибо за отличную уборку! Квартира блестит, запаха химии нет. Рекомендую!
+  </div>
+  <div class="review">
+    <strong>Андрей М.:</strong> Заказывал уборку офиса. Всё сделали оперативно, сотрудники довольны. Успехов вам!
+  </div>
+
+  <h2>Фотогалерея</h2>
+  <div class="gallery">
+    <img src="before.jpg" alt="До уборки" />
+    <img src="after.jpg" alt="После уборки" />
+  </div>
+
+  <h2>Оставить заявку</h2>
+  <form action="mailto:akapranov1983@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Ваше имя" required />
+    <input type="tel" name="phone" placeholder="Телефон для связи" required />
+    <textarea name="message" placeholder="Комментарий (необязательно)"></textarea>
+    <button class="button" type="submit">Перезвоните мне</button>
+  </form>
+</div>
+
+<footer>
+  © 2025 Экоклинер · Калининград · Тел. <a href="tel:+79216034267">+7 (921) 603-42-67</a>
+</footer>
+
 </body>
 </html>
