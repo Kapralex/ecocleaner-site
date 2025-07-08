@@ -1,158 +1,174 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE html><html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Экоклинер – Эко-уборка в Калининграде</title>
   <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      margin: 0;
-      background: #f7f9f8;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #1e9d74;
-      color: white;
-      text-align: center;
-      padding: 10px 20px 30px;
-    }
-    .logo-container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px 0;
-    }
-    .logo-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .container {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #1e9d74;
-      border-bottom: 1px solid #cce3db;
-      padding-bottom: 5px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-    .gallery img {
-      width: 48%;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    .review {
-      background: #eaf5f1;
-      padding: 15px;
-      margin-bottom: 10px;
-      border-left: 4px solid #1e9d74;
-      border-radius: 6px;
-    }
-    .button {
-      display: inline-block;
-      padding: 12px 20px;
-      background: #1e9d74;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-      border: none;
-      cursor: pointer;
-    }
-    form {
-      margin-top: 20px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 5px 0 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1em;
-    }
-    .price-block {
-      background: #f0fdfa;
-      padding: 20px;
-      border-radius: 8px;
-      margin: 20px 0;
-    }
-    .price-block ul {
-      padding-left: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #f0f0f0;
-      color: #666;
-      margin-top: 40px;
-    }
+    :root {
+      --primary: #1e9d74;
+      --bg: #f7f9f8;
+      --text: #333;
+    }* {
+  box-sizing: border-box;
+}
 
-    @media (max-width: 600px) {
-      .gallery img {
-        width: 100%;
-      }
-    }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: var(--primary);
+  margin-top: 40px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.feature {
+  background: #fff;
+  border-left: 5px solid var(--primary);
+  padding: 15px;
+  flex: 1 1 45%;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.faq {
+  margin-top: 30px;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 15px;
+  border-left: 4px solid var(--primary);
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.gallery img {
+  width: 48%;
+  margin: 1%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.review {
+  background: #eaf5f1;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid var(--primary);
+  border-radius: 6px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #f0f0f0;
+  color: #666;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .gallery img, .feature {
+    width: 100%;
+  }
+}
+
   </style>
 </head>
-<body>
-
-<header>
-  <div class="logo-container">
-    <img src="A_vector-based_digital_illustration_logo_for_a_cle.png" alt="Экоклинер логотип" />
-  </div>
+<body><header>
+  <img src="A_vector-based_digital_illustration_logo_for_a_cle.png" alt="Экоклинер логотип" />
   <p>Профессиональная эко-уборка в Калининграде</p>
-</header>
-
-<div class="container">
+</header><div class="container">
   <h2>О нас</h2>
-  <p>Мы используем только безопасные, экологичные средства. Работаем быстро, качественно и с любовью к чистоте.</p>
-
-  <h2>Отзывы клиентов</h2>
+  <p>Мы используем только безопасные, экологичные средства. Работаем быстро, качественно и с любовью к чистоте.</p>  <h2>Наши преимущества</h2>
+  <div class="features">
+    <div class="feature">✅ Экосредства без химии</div>
+    <div class="feature">✅ Профессиональное оборудование</div>
+    <div class="feature">✅ Приезд в течение 2 часов</div>
+    <div class="feature">✅ Опыт более 5 лет</div>
+  </div>  <h2>Часто задаваемые вопросы</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <strong>Какие средства вы используете?</strong>
+      <br />Только биоразлагаемые, сертифицированные средства.
+    </div>
+    <div class="faq-item">
+      <strong>Можно ли заказать уборку на вечер?</strong>
+      <br />Да, работаем до 21:00 по Калининграду.
+    </div>
+    <div class="faq-item">
+      <strong>Вы даёте чек/договор?</strong>
+      <br />Да, предоставляем все документы по запросу.
+    </div>
+  </div>  <h2>Отзывы клиентов</h2>
   <div class="review">
     <strong>Ирина С.:</strong> Спасибо за отличную уборку! Квартира блестит, запаха химии нет. Рекомендую!
   </div>
   <div class="review">
     <strong>Андрей М.:</strong> Заказывал уборку офиса. Всё сделали оперативно, сотрудники довольны. Успехов вам!
-  </div>
-
-  <h2>Фотогалерея</h2>
+  </div>  <h2>Фотогалерея</h2>
   <div class="gallery">
     <img src="before.jpg" alt="До уборки" />
     <img src="after.jpg" alt="После уборки" />
-  </div>
-
-  <h2>Прайс-лист и услуги</h2>
-  <div class="price-block">
-    <p><strong>Базовая эко-уборка квартиры:</strong></p>
-    <ul>
-      <li>1-комнатная — от 2500 ₽</li>
-      <li>2-комнатная — от 3500 ₽</li>
-      <li>3-комнатная — от 4500 ₽</li>
-    </ul>
-    <p><strong>Уборка паром:</strong> глубокая очистка без химии — от 1200 ₽/комната</p>
-    <p>Мы заботимся о вашем здоровье и природе, используя только пар, микрофибру и биоразлагаемые средства.</p>
-  </div>
-
-  <h2>Оставить заявку</h2>
+  </div>  <h2>Оставить заявку</h2>
   <form action="mailto:akapranov1983@gmail.com" method="post" enctype="text/plain">
     <input type="text" name="name" placeholder="Ваше имя" required />
     <input type="tel" name="phone" placeholder="Телефон для связи" required />
     <textarea name="message" placeholder="Комментарий (необязательно)"></textarea>
     <button class="button" type="submit">Перезвоните мне</button>
   </form>
-</div>
-
-<footer>
+</div><footer>
   © 2025 Экоклинер · Калининград · Тел. <a href="tel:+79216034267">+7 (921) 603-42-67</a>
-</footer>
-
-</body>
+</footer></body>
 </html>
