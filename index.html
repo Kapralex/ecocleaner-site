@@ -1,163 +1,133 @@
-<!DOCTYPE html><html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Экоклинер — Эко-уборка в Калининграде</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Экоклинер – Эко-уборка в Калининграде</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f9fdfb;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f5fdf9;
       color: #333;
-      line-height: 1.6;
     }
     header {
-      background: url('logo-header.png') center/cover no-repeat;
-      height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: #e0f5ee;
+      padding: 0;
+      text-align: center;
+    }
+    header img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
     }
     .container {
-      max-width: 960px;
-      margin: auto;
       padding: 20px;
+      max-width: 900px;
+      margin: auto;
     }
     h2 {
       color: #1e9d74;
-      margin-bottom: 10px;
+      margin-top: 40px;
     }
-    .section {
-      margin-bottom: 40px;
-    }
-    .services, .why-us {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
     .gallery img {
-      width: 100%;
-      border-radius: 10px;
+      width: 48%;
+      border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .reviews .card {
+    .review {
       background: #eaf5f1;
-      border-left: 5px solid #1e9d74;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-    table th, table td {
-      padding: 12px 16px;
-      border-bottom: 1px solid #eee;
-    }
-    table th {
-      background: #1e9d74;
-      color: white;
-      text-align: left;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
+      padding: 15px;
       margin-bottom: 10px;
-      border: 1px solid #ccc;
+      border-left: 4px solid #1e9d74;
       border-radius: 6px;
     }
     .button {
+      display: inline-block;
+      padding: 12px 20px;
       background: #1e9d74;
       color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: 600;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .price-block {
+      background: #f2fef9;
+      padding: 20px;
+      border-left: 4px solid #1e9d74;
+      margin-top: 30px;
+      border-radius: 8px;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #666;
+      padding: 15px;
       background: #f0f0f0;
+      color: #666;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <header></header>
-  <div class="container">
-    <section class="section">
-      <h2>О нас</h2>
-      <p>Мы — команда профессионалов, предлагающая экологичную уборку без вредной химии. Быстро, качественно и безопасно для здоровья.</p>
-    </section><section class="section">
-  <h2>Наши услуги</h2>
-  <div class="services">
-    <div class="card">Уборка квартир</div>
-    <div class="card">Офисная уборка</div>
-    <div class="card">Уборка после ремонта</div>
-    <div class="card">Чистка паром</div>
+
+<header>
+  <img src="A_vector-based_digital_illustration_logo_for_a_cle.png" alt="Логотип Экоклинер">
+</header>
+
+<div class="container">
+  <h2>О нас</h2>
+  <p>Мы предоставляем эко-уборку квартир, домов и офисов в Калининграде. Используем только безопасные, биоразлагаемые моющие средства. Забота о вашем здоровье и окружающей среде — наш приоритет.</p>
+
+  <h2>Отзывы клиентов</h2>
+  <div class="review">
+    <strong>Ирина С.:</strong> Спасибо за отличную уборку! Квартира блестит, запаха химии нет. Рекомендую!
   </div>
-</section>
+  <div class="review">
+    <strong>Андрей М.:</strong> Заказывал уборку офиса. Всё сделали оперативно, сотрудники довольны. Успехов вам!
+  </div>
 
-<section class="section">
-  <h2>Прайс-лист</h2>
-  <table>
-    <tr><th>Услуга</th><th>Цена от</th></tr>
-    <tr><td>Генеральная уборка (до 50м²)</td><td>от 3500 ₽</td></tr>
-    <tr><td>Уборка после ремонта</td><td>от 5000 ₽</td></tr>
-    <tr><td>Чистка паром</td><td>от 1200 ₽</td></tr>
-  </table>
-</section>
-
-<section class="section">
   <h2>Фотогалерея</h2>
   <div class="gallery">
-    <img src="before.jpg" alt="До уборки">
-    <img src="after.jpg" alt="После уборки">
+    <img src="before.jpg" alt="До уборки" />
+    <img src="after.jpg" alt="После уборки" />
   </div>
-</section>
 
-<section class="section reviews">
-  <h2>Отзывы клиентов</h2>
-  <div class="card"><strong>Ирина С.:</strong> Качественная уборка и приятный запах чистоты. Спасибо!</div>
-  <div class="card"><strong>Андрей М.:</strong> Всё сделали вовремя, без лишних вопросов. Рекомендую!</div>
-</section>
-
-<section class="section">
-  <h2>Почему выбирают нас</h2>
-  <div class="why-us">
-    <div class="card">Экологичные средства</div>
-    <div class="card">Опытные сотрудники</div>
-    <div class="card">Работаем без выходных</div>
+  <div class="price-block">
+    <h2>Цены на услуги</h2>
+    <ul>
+      <li>Генеральная уборка квартиры – от 3500 руб.</li>
+      <li>Уборка паром (санузел, кухня) – от 1500 руб.</li>
+      <li>Поддерживающая уборка – от 2000 руб.</li>
+    </ul>
+    <p><strong>Акция:</strong> первая уборка со скидкой 15%!</p>
   </div>
-</section>
 
-<section class="section">
-  <h2>Заказать звонок</h2>
+  <h2>Оформить заявку</h2>
   <form action="mailto:akapranov1983@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Ваше имя" required>
-    <input type="tel" name="phone" placeholder="Телефон для связи" required>
+    <input type="text" name="name" placeholder="Ваше имя" required />
+    <input type="tel" name="phone" placeholder="Телефон для связи" required />
     <textarea name="message" placeholder="Комментарий (необязательно)"></textarea>
     <button class="button" type="submit">Перезвоните мне</button>
   </form>
-</section>
+</div>
 
-  </div>
-  <footer>
-    © 2025 Экоклинер · Калининград · <a href="tel:+79216034267">+7 (921) 603-42-67</a>
-  </footer>
+<footer>
+  © 2025 Экоклинер · Калининград · Тел. <a href="tel:+79216034267">+7 (921) 603-42-67</a>
+</footer>
+
 </body>
 </html>
